@@ -9,7 +9,7 @@ const PRICES = {
 };
 
 export async function GET(req: NextRequest) {
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://replyforge-beta.vercel.app';
   const plan = req.nextUrl.searchParams.get('plan') || 'pro';
   const priceId = PRICES[plan as keyof typeof PRICES] || PRICES.pro;
 
