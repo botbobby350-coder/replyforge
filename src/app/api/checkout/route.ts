@@ -4,8 +4,8 @@ import Stripe from 'stripe';
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 const PRICES = {
-  pro: 'price_1TUydf2K7WqlXGcCXwLhcY7P',   // $29/mo
-  team: 'price_1TUydt2K7WqlXGcCvW1I2mWp',  // $79/mo
+  pro: 'price_1TUz0J2K7WqlXGcCYEyEdhQc',   // $29/mo
+  team: 'price_1TUz0Z2K7WqlXGcCKFbAEhgE',  // $79/mo
 };
 
 export async function GET(req: NextRequest) {
